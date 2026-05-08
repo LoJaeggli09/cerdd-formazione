@@ -368,9 +368,9 @@ Per hardening produzione:
 ## Roadmap — cosa manca
 
 ### Alta priorità
-- [ ] **Variabili d'ambiente**: spostare URL e chiave Supabase in `.env` (ora sono hardcoded in `supabaseClient.js`)
-- [ ] **Hardening Electron**: `contextIsolation: true`, `nodeIntegration: false`, `preload` script
-- [ ] **Audit log**: tabella Supabase dedicata per tracciare reset password, creazione/eliminazione utenti, accessi
+- [x] **Variabili d'ambiente**: spostare URL e chiave Supabase in `.env` (ora sono hardcoded in `supabaseClient.js`)
+- [x] **Hardening Electron**: `contextIsolation: true`, `nodeIntegration: false`, `preload` script
+- [x] **Audit log**: tabella Supabase dedicata per tracciare reset password, creazione/eliminazione utenti, accessi
 
 ### Media priorità
 - [ ] **Scadenza password**: campo `password_changed_at` nel DB + forzare cambio ogni N mesi
