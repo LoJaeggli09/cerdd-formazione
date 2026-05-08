@@ -377,9 +377,9 @@ Per hardening produzione:
 - [ ] **Email notifica reset password**: inviare email all'utente quando l'admin fa reset
 - [ ] **2FA / autenticazione rafforzata** per ruoli admin e inspector
 - [ ] **Test automatici**: login, obiettivi, notifiche, export (Jest + React Testing Library)
-- [ ] **Gestione allegati su Supabase Storage**: attualmente i file sono locali (Electron fs)
+- [x] **Gestione allegati su Supabase Storage**: attualmente i file sono locali (Electron fs)
 
 ### Bassa priorità
 - [x] **Notifiche push desktop**: via Electron `Notification` API + Supabase Realtime — il trainer riceve notifica push quando uno studente completa un obiettivo; lo studente riceve conferma push locale al completamento
 - [ ] **Import utenti da CSV**: upload bulk invece di creazione manuale
-- [ ] **Archivio apprendisti**: sezione separata per apprendisti con apprendistato scaduto invece di eliminarli
+- [x] **Archivio apprendisti**: sezione separata per apprendisti con apprendistato scaduto invece di eliminarli
