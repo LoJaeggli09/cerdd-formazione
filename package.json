@@ -1,0 +1,58 @@
+{
+  "name": "monitor-formazione",
+  "version": "1.2.49",
+  "author": "Elia Jaeggli",
+  "description": "App desktop per monitorare il percorso formativo degli apprendisti",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "react-start": "cross-env PORT=3003 react-scripts start",
+    "react-build": "react-scripts build && node -e \"require('fs').copyFileSync('main.js', 'build/electron.js')\"",
+    "electron-start": "electron .",
+    "start": "concurrently \"npm run react-start\" \"wait-on http://localhost:3003 \"",
+    "build": "npm run react-build && cross-env TEMP=C:\\Temp TMP=C:\\Temp electron-builder",
+    "version:bump": "node scripts/bump-version.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.8",
+    "@mui/material": "^7.3.8",
+    "@supabase/supabase-js": "^2.105.1",
+    "bcryptjs": "^3.0.3",
+    "framer-motion": "^12.34.3",
+    "jspdf": "^4.2.0",
+    "jspdf-autotable": "^5.0.7",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-window": "^2.2.7",
+    "recharts": "^3.7.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^10.1.0",
+    "electron": "^40.1.0",
+    "electron-builder": "^26.6.0",
+    "react-scripts": "^5.0.1",
+    "wait-on": "^7.0.1"
+  },
+  "overrides": {
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31",
+    "tar": "^7.5.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
